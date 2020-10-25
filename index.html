@@ -44,39 +44,11 @@
 			</div>
 		</div>
 	</nav>
-	
-	<div id="smart-button-container">
-      <div style="text-align: center;">
-        <div style="margin-bottom: 1.25rem;">
-          <p>Lista de servicios de Team UwU</p>
-          <select id="item-options"><option value="Bot Básico" price="3">Bot Básico - 3 USD</option><option value="Bot Musical" price="5">Bot Musical - 5 USD</option><option value="Bot de Moderación" price="8">Bot de Moderación - 8 USD</option><option value="Bot de Multifuncion" price="10">Bot de Multifuncion - 10 USD</option></select>
-          <select style="visibility: hidden" id="quantitySelect"></select>
-        </div>
-      <div id="paypal-button-container"></div>
-      </div>
-    </div>
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script>
-      function initPayPalButton() {
-        var shipping = 0.75;
-        var itemOptions = document.querySelector("#smart-button-container #item-options");
-    var quantity = parseInt();
-    var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
-    if (!isNaN(quantity)) {
-      quantitySelect.style.visibility = "visible";
-    }
-    var orderDescription = 'Lista de servicios de Team UwU';
-    if(orderDescription === '') {
-      orderDescription = 'Item';
-    }
-    paypal.Buttons({
-      style: {
-        shape: 'rect',
-        color: 'gold',
-        layout: 'vertical',
-        label: 'paypal',
-        
-      },
+	<div class = "kredor">
+		<h1>TEST1</h1>
+		<p>subtitulo</p>
+	</div>
+      },*/
       createOrder: function(data, actions) {
         var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
         var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
