@@ -251,6 +251,10 @@ color: rgba(255, 255, 255, 0.46) !important
 
 /*pagina principal*/
 
+.banner{
+    background-color: #422595;
+}
+
 .wave{
     position: absolute;
     bottom: 0;
