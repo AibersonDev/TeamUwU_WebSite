@@ -1,4 +1,4 @@
-$.getJSON('', response => typeText(response.servers)).catch(o_O => typeText());
+$.getJSON('https://api.neeko-bot.xyz/servers', response => typeText(response.servers)).catch(o_O => typeText());
 
 function typeText(servers = null) {
     const strings = ["Team UwU"];
